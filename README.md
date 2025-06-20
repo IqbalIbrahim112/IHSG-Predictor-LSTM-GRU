@@ -1,52 +1,38 @@
-# Prediksi IHSG dengan LSTM vs GRU
+# Prediksi IHSG dengan LSTM dan GRU
 
-Proyek ini merupakan bagian dari artikel ilmiah berjudul **"Perbandingan Algoritma Long Short-Term Memory (LSTM) dan Gated Recurrent Unit (GRU) untuk Prediksi IHSG"** yang dipresentasikan dalam Seminar Nasional.
+Repositori ini berisi proyek prediksi **Indeks Harga Saham Gabungan (IHSG)** menggunakan dua arsitektur deep learning: **Long Short-Term Memory (LSTM)** dan **Gated Recurrent Unit (GRU)**. Proyek ini merupakan bagian dari penelitian yang dipresentasikan dalam **Seminar Nasional**.
 
-## 📄 Deskripsi Singkat
+## 📊 Dataset
 
-Penelitian ini membandingkan dua arsitektur deep learning, LSTM dan GRU, untuk memprediksi **Indeks Harga Saham Gabungan (IHSG)** berdasarkan data historis dari tahun 2015 hingga 2025. Evaluasi dilakukan menggunakan metrik **Mean Absolute Percentage Error (MAPE)**.
+Dataset yang digunakan adalah data historis harian IHSG dari **1 Januari 2015 hingga 16 Mei 2025**, terdiri atas:
+- `Date` – Tanggal perdagangan
+- `Price` – Harga penutupan IHSG
 
-**Hasil utama:**
-- GRU memberikan performa prediksi terbaik dengan MAPE **1.68%**
-- LSTM terbaik mencetak MAPE **1.81%**
+Data telah diurutkan berdasarkan waktu dan dinormalisasi sebelum digunakan untuk pelatihan model.
 
-## 📁 Struktur Folder
+## 🧠 Tujuan Penelitian
 
-- `artikel/`: File PDF artikel ilmiah
-- `data/`: Dataset historis IHSG (jika tersedia)
-- `src/`: Kode Python untuk preprocessing, training, dan evaluasi model
-- `requirements.txt`: (Opsional) Library Python yang dibutuhkan
+Penelitian ini bertujuan untuk membandingkan performa model **LSTM dan GRU** dalam memprediksi harga IHSG berdasarkan pergerakan 60 hari sebelumnya. Evaluasi performa dilakukan menggunakan metrik:
+- **Mean Absolute Percentage Error (MAPE)**
 
-## ⚙️ Cara Menjalankan
-
-1. Clone repo:
-    ```bash
-    git clone https://github.com/username/prediksi-ihsg-lstm-vs-gru.git
-    cd prediksi-ihsg-lstm-vs-gru
-    ```
-
-2. Install library:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Jalankan kode:
-    ```bash
-    python src/prediksi_ihsg.py
-    ```
-
-## 📚 Artikel
-
-PDF lengkap bisa dilihat di folder [`/artikel`](./artikel).
-
-## 📊 Hasil Singkat
+## 🔍 Hasil Ringkas
 
 | Model | Konfigurasi Neuron | Batch Size | MAPE    |
 |-------|--------------------|------------|---------|
 | LSTM  | 64–64              | 32         | 1.81%   |
 | GRU   | 32–32              | 32         | **1.68%** |
 
-## 📬 Kontak
+Model GRU dengan konfigurasi 32–32 neuron dan batch size 32 menghasilkan akurasi terbaik dengan MAPE terendah.
 
-Jika ada pertanyaan, silakan hubungi melalui email: [emailmu@domain.com]
+## 📁 Struktur Folder
 
+- `artikel/` – Artikel ilmiah dalam format PDF
+- `data/` – Dataset historis IHSG (`ihsg.csv`)
+- `src/` – Script Python untuk preprocessing, pelatihan model, dan evaluasi
+
+## ⚙️ Cara Menjalankan
+
+1. Clone repositori:
+   ```bash
+   git clone https://github.com/username/ihsg-prediction-lstm-gru.git
+   cd ihsg-prediction-lstm-gru
