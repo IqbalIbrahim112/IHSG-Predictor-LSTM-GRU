@@ -34,7 +34,7 @@ Model GRU dengan konfigurasi 32–32 neuron dan batch size 32 menghasilkan akura
 
 1. Clone repositori:
    ```bash
-   git clone https://github.com/username/ihsg-prediction-lstm-gru.git
+   git clone https://github.com/IqbalIbrahim112/ihsg-prediction-lstm-gru.git
    cd ihsg-prediction-lstm-gru
    ```
 
