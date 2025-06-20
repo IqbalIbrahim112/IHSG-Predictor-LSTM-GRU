@@ -36,3 +36,20 @@ Model GRU dengan konfigurasi 32–32 neuron dan batch size 32 menghasilkan akura
    ```bash
    git clone https://github.com/username/ihsg-prediction-lstm-gru.git
    cd ihsg-prediction-lstm-gru
+   ```
+
+2. Jalankan skrip utama:
+   ```bash
+   python src/train_model.py
+   ```
+
+> Pastikan Python dan library terkait (seperti TensorFlow, Pandas, NumPy, Scikit-learn) sudah terinstal di lingkungan kamu.
+
+## 📄 Artikel
+
+Artikel ilmiah lengkap dari penelitian ini tersedia di folder [`/artikel`](./artikel).
+
+## 📬 Kontak
+
+Untuk pertanyaan atau kolaborasi lebih lanjut, silakan hubungi:
+**[emailmu@domain.com]**
