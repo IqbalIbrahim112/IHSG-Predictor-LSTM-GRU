@@ -40,7 +40,7 @@ Model GRU dengan konfigurasi 32–32 neuron dan batch size 32 menghasilkan akura
 
 2. Jalankan skrip utama:
    ```bash
-   python src/train_model.py
+   python src/code.py
    ```
 
 > Pastikan Python dan library terkait (seperti TensorFlow, Pandas, NumPy, Scikit-learn) sudah terinstal di lingkungan kamu.
@@ -52,4 +52,4 @@ Artikel ilmiah lengkap dari penelitian ini tersedia di folder [`/artikel`](./art
 ## 📬 Kontak
 
 Untuk pertanyaan atau kolaborasi lebih lanjut, silakan hubungi:
-**[emailmu@domain.com]**
+**[iqbaltriwicaksono112@gmail.com]**
